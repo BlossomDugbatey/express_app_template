@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- header -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css" type="text/css">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <link rel="stylesheet" href="/menus.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Select-restaurant</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div id="wrap">
+        <nav class="nav-items hideNav hidden">
+            <a href="#connect"><img class="logo" src="/assets/restaurant_logo.png" alt="logo"></a>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">Our Story</a></li>
+                <li><a href="/menus">Menu</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="comment">Drop a comment</a></li>
+                <li><a href="orders/add">Book a Table</a></li>
+                <!-- <li><a href="/comment">Comment</a></li> -->
+                <!-- <li><a href="/about">About</a></li> -->
+
+            </ul>
+
+
+            <div class="hamburger-menu">
+                <button class="btn-nav">
+                    <span class="icon-bar top"></span>
+                    <span class="icon-bar middle"></span>
+                    <span class="icon-bar bottom"></span>
+                </button>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <!-- ejs call to render view -->
+    <div>
+        <%- body %> 
+    </div>
+
+    <!-- page's footer -->
+    <footer>
+        <div class="design">
+            <img src="/assets/footer-logo.png" alt="select logo">
+            <span>&copy 2021 Select<br>Designed by Bloh_</span>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#"><i class='fab fa-twitter'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-facebook'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-behance'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-google-plus-g'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-linkedi'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-instagram'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-pinterest'></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class='fab fa-flickr'></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
